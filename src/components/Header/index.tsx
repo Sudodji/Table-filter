@@ -1,6 +1,6 @@
 import React from 'react';
 import Moment from 'react-moment';
-import styles from './header.module.scss'
+import styles from './style.module.scss'
 
 const Header = () => (
   <header>

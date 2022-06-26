@@ -1,4 +1,4 @@
-import { AnyAction } from 'redux';
+import { AnyAction } from '@reduxjs/toolkit';
 import { EActionsTypes } from '../actions/actionLoadingData';
 import { IList } from '../initialState';
 
@@ -11,13 +11,15 @@ const initialState:IList = {
   error: false,
 };
 
+const getRandomInt = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
+
 const fillArray = () => {
   const data = [];
   // eslint-disable-next-line no-plusplus
   for (let i = 1; i <= 1000; i++) {
     data.push({
       username: `user-${i}`,
-      action: userActions[i % 5],
+      action: userActions[getRandomInt(0, 4)],
       action_createad_at: new Date().getMilliseconds() * Math.random(),
     })
   }

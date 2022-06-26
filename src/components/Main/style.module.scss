@@ -1,17 +1,17 @@
 .main {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .table-container {
+  .tableContainer {
     height: 500px;
     margin-bottom: 20px;
     margin-top: 30px;
 
-    .not-found {
+    .notFound {
       color: red;
       font-size: 1.8em;
     }
